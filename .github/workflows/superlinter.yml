@@ -22,5 +22,8 @@ jobs:
         uses: github/super-linter@v3.15.2
         env:
           VALIDATE_JSCPD: false
+          VALIDATE_PHP_PHPCS: false
+          VALIDATE_PHP_PHPSTAN: false
+          VALIDATE_PHP_PSALM: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
