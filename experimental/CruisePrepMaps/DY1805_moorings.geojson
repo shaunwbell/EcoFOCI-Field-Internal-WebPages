@@ -1,0 +1,161 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -167.393,53.632 ]
+    },
+    "properties": {
+    "FIELD1":"18M3-1",
+    "FIELD2":"Deploy Marine Mammal Mooring",
+    "FIELD3":100,
+    "FIELD5":167.393
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -168.93,53.14 ]
+    },
+    "properties": {
+    "FIELD1":"17M3-2",
+    "FIELD2":"Deploy Marine Mammal Mooring",
+    "FIELD3":130,
+    "FIELD5":168.93
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -172.79,60.03 ]
+    },
+    "properties": {
+    "FIELD1":"18SM-ITAE",
+    "FIELD2":"Deploy mooring",
+    "FIELD3":70,
+    "FIELD5":172.79
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -164,56.8 ]
+    },
+    "properties": {
+    "FIELD1":"17BSP-2A",
+    "FIELD2":"Deploy Subsurface Mooring",
+    "FIELD3":70,
+    "FIELD5":164
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -172.79,60.03 ]
+    },
+    "properties": {
+    "FIELD1":"18SM-1A",
+    "FIELD2":"Deploy subsurface mooring",
+    "FIELD3":72,
+    "FIELD5":172.79
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -173.42,60.18 ]
+    },
+    "properties": {
+    "FIELD1":"18SM-2A",
+    "FIELD2":"Deploy Subsurface Mooring",
+    "FIELD3":72,
+    "FIELD5":173.42
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -172.52,60.23 ]
+    },
+    "properties": {
+    "FIELD1":"18SM-3A",
+    "FIELD2":"Deploy Subsurface Mooring",
+    "FIELD3":76,
+    "FIELD5":172.52
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -164,56.8 ]
+    },
+    "properties": {
+    "FIELD1":"17BSM-2A",
+    "FIELD2":"Deploy Surface Mooring",
+    "FIELD3":70,
+    "FIELD5":164
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -164,56.8 ]
+    },
+    "properties": {
+    "FIELD1":"17BS-ITAE",
+    "FIELD2":"Deploy Surface Mooring",
+    "FIELD3":70,
+    "FIELD5":164
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -167.393,53.632 ]
+    },
+    "properties": {
+    "FIELD1":"17M3-1",
+    "FIELD2":"Recover Marine Mammal Mooring",
+    "FIELD3":100,
+    "FIELD5":167.393
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -164.054,56.878 ]
+    },
+    "properties": {
+    "FIELD1":"17BSP-2B",
+    "FIELD2":"Recover Subsurface Mooring",
+    "FIELD3":70,
+    "FIELD5":164.054
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -164.055,56.868 ]
+    },
+    "properties": {
+    "FIELD1":"17BS-2C",
+    "FIELD2":"Recover Subsurface Mooring ",
+    "FIELD3":70,
+    "FIELD5":164.055
+    }
+  }
+]
+}

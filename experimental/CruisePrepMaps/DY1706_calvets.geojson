@@ -1,0 +1,61 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -164.066,56.871 ]
+    },
+    "properties": {
+    "FIELD1":"",
+    "FIELD2":"70M2/M2",
+    "FIELD3":"3 CalVETs",
+    "FIELD4":72,
+    "FIELD6":164.066
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -168.872,57.89 ]
+    },
+    "properties": {
+    "FIELD1":"",
+    "FIELD2":"70M21/M4",
+    "FIELD3":"3 CalVETs",
+    "FIELD4":73,
+    "FIELD6":168.872
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -171.735,59.911 ]
+    },
+    "properties": {
+    "FIELD1":"",
+    "FIELD2":"70m38/ M5",
+    "FIELD3":"3 CalVETs",
+    "FIELD4":79,
+    "FIELD6":171.735
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -174.684,62.195 ]
+    },
+    "properties": {
+    "FIELD1":"",
+    "FIELD2":"M8",
+    "FIELD3":"CALVETS",
+    "FIELD4":70,
+    "FIELD6":174.684
+    }
+  }
+]
+}

@@ -1,0 +1,255 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#ef0908",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "canyon exit"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -154.35791015625,
+            71.37812702610609
+          ],
+          [
+            -156.97265625,
+            72.10094360009953
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#01ff00",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "bering strait"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -168.1787109375,
+            65.64921629248367
+          ],
+          [
+            -169.60693359375,
+            66.03587344492607
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#ff000a",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "point hope-ish"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -166.5087890625,
+            68.08970896434312
+          ],
+          [
+            -171.474609375,
+            68.14703189961982
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#fa0015",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "central channel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -165.8935546875,
+            69.17818443567214
+          ],
+          [
+            -168.310546875,
+            69.67235784229395
+          ],
+          [
+            -170.244140625,
+            70.06558465579644
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#0300ff",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "Russia-West"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -178.9892578125,
+            69.20940390181205
+          ],
+          [
+            -172.265625,
+            70.49557354093136
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#6f6e6f",
+        "stroke-width": 1.5,
+        "stroke-opacity": 1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -170,
+            74.8793566119438
+          ],
+          [
+            -170.33203125,
+            64.7553898552679
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#0007ff",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "shelf-box"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -158.37890625,
+            74.21198251594369
+          ],
+          [
+            -161.4111328125,
+            73.403337662912
+          ],
+          [
+            -155.9619140625,
+            71.9789878329492
+          ],
+          [
+            -153.1494140625,
+            72.95831480630818
+          ],
+          [
+            -158.4228515625,
+            74.21198251594369
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#1a00ff",
+        "stroke-width": 2,
+        "stroke-opacity": 1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -159.873046875,
+            73.8125737670852
+          ],
+          [
+            -154.5556640625,
+            72.48850416712037
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#ff0200",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "Icy Cape Box"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -160.13671875,
+            70.62719676071552
+          ],
+          [
+            -166.376953125,
+            72.10094360009953
+          ],
+          [
+            -168.0908203125,
+            71.34301347171373
+          ],
+          [
+            -162.59765625,
+            69.96043926902489
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#0006ff",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "name": "Abyssal Plane"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -158.466796875,
+            74.21198251594369
+          ],
+          [
+            -170.0244140625,
+            74.42577748401034
+          ],
+          [
+            -170.068359375,
+            73.4784850788999
+          ],
+          [
+            -161.3671875,
+            73.41588526207096
+          ]
+        ]
+      }
+    }
+  ]
+}

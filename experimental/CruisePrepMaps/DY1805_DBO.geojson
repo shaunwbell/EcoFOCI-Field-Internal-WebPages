@@ -1,0 +1,125 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -175.0600,62.0100 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.1",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -175.2100,62.0500 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.2",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -174.8770,62.2190 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.3",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -174.5700,62.3900 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.4",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -174.0830,62.4680 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.5",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -173.5500,62.5600 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.6",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -173.5000,62.7870 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.7",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -173.4600,63.0300 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.8",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -173.0800,63.2800 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.9",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -172.5910,63.6040 ]
+    },
+    "properties": {
+    "FIELD1":"DBO1.10",
+    "FIELD2":"CTD/BON",
+    "FIELD3":"50-80"
+    }
+  }
+]
+}
