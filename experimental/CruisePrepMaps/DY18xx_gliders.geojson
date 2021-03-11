@@ -1,0 +1,29 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -173,60.1 ]
+    },
+    "properties": {
+    "FIELD1":"St Matthew Island Gliders",
+    "FIELD3":"",
+    "FIELD2":"Recover glider"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -173,60.1 ]
+    },
+    "properties": {
+    "FIELD1":"St Matthew Island Gliders",
+    "FIELD3":"",
+    "FIELD2":"Recover glider"
+    }
+  }
+]
+}

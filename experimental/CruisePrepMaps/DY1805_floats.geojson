@@ -1,0 +1,33 @@
+{
+   "type": "FeatureCollection",
+   "features": [  
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -168.913,55.047 ]
+    },
+    "properties": {
+    "FIELD1":"A-Float",
+    "FIELD2":"A1",
+    "FIELD3":"Deploy Float",
+    "FIELD4":2366,
+    "FIELD6":168.913
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -169.506,54.668 ]
+    },
+    "properties": {
+    "FIELD1":"A-Float",
+    "FIELD2":"A2",
+    "FIELD3":"Deploy Float",
+    "FIELD4":2895,
+    "FIELD6":169.506
+    }
+  }
+  ]
+  }
