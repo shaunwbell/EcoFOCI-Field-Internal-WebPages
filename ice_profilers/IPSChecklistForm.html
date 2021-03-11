@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
+Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="reports.css" />
+<title>IPS Checklist Form</title>
+<style>
+	tab { padding-left: 4em; }
+	p.small { line-height: 75%; font-size:12px }
+</style>
+</head>
+
+<body>
+
+<div id="container-wrap">
+<div id="content-wrap">
+	<div id="container">
+
+	<form method="post" action="AddNewIPSRecord.php" id="usrinput">
+
+	<!-- Instrument Deployment  -->
+	<div id="Deployment" > <h4 class="uline">IPS-5 Deployment Checklist </h4>
+
+	<p class="small">
+	IPS-5 serial number:<input type="text" name="IPSSerialNo" size="15" class="right" > <br><br>
+	Mooring ID:<input type="text" name="DeployMooringID" size="15" class="right"  > <br><br>
+	Proposed depth (m):<input type="text" name="ProposedDepth" size="15" class="right" > <br><br>
+	Firmware Version:<input type="text" name="FirmwareVersion" size="15" class="right" > <br><br> 
+	</p>
+
+	<p class="small">
+	<u>New battery pack installed:</u><input type="text" name="NewBattPack" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>serial #:<input type="text" name="BattSerialNo" size="15" class="right" > <br><br>
+	<tab>manu. date:<input type="text" name="BattManDate" size="15" class="right" > <br><br>
+	<tab>main voltage:<input type="text" name="BattMainVolt" size="15" class="right" > <br><br>
+	<tab>Tx voltage:<input type="text" name="BattTxVolt" size="15" class="right" > <br><br>
+	<tab>4-pin connected:<input type="text" name="FourPinConn"  placeholder="y/n" size="3" class="right" > <br><br>
+	<tab>ground wire connected:<input type="text" name="GroundWireConn"  placeholder="y/n" size="3" class="right" > <br><br>
+	<tab>desiccant:<input type="text" name="Dessicant" placeholder="y/n" size="3" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>New watch battery installed:</u><input type="text" name="NewWatchBatt" placeholder="y/n" size="3" class="right" > <br><br> 
+	</p>
+
+	<p class="small">
+	<u>New memory card:</u><input type="text" name="NewMemoryCard" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>brand:<input type="text" name="MemBrand" size="15" class="right" > <br><br>
+	<tab>size:<input type="text" name="MemSize" size="15" class="right" > <br><br>
+	<tab>formatted by instrument:<input type="text" name="MemFormattedByInst" placeholder="y/n" size="3" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>Real-time clock set:</u><input type="text" name="RealTimeClockSet" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>time:<input type="text" name="SetTime" size="15" class="right" > <br><br>
+	<tab>date:<input type="text" name="SetDate" size="15" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>Deployment file uploaded:</u><input type="text" name="DeploymentFileUploaded" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>file name:<input type="text" name="DeploymentFileName" size="30" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>New O-rings:</u><input type="text" name="NewORings" placeholder="y/n" size="3" class="right" > <br><br> 
+	</p>
+
+	<p class="small">
+	<u>Three top bolts secured:</u><input type="text" name="TopBoltsSecured" placeholder="y/n" size="3" class="right" > <br><br> 
+	</p>
+
+	<p class="small">
+	<u>Purge plug secured:</u><input type="text" name="PurgePlugSecured" placeholder="y/n" size="3" class="right" > <br><br> 
+	</p>
+
+	<p class="small">
+	<u>Sacrificial Zincs:</u><input type="text" name="SacrificialZincsDeploy" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>transducer head:<input type="text" name="ZincTransducerHeadDeploy" size="15" class="right" > <br><br>
+	<tab>bottom:<input type="text" name="ZincBottomDeploy" size="15" class="right" > <br><br>
+	<tab>check conductivity:<input type="text" name="ZincConductDeploy" size="15" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>Pressure inlet topped with oil:</u><input type="text" name="PressInletOil" placeholder="y/n" size="3" class="right" > <br><br> 
+	</p>
+
+	<p class="small">
+	<u>Instrument set to "Deploy":</u><input type="text" name="InstrumSetDeploy" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>date set:<input type="text" name="InstrumDateSet" size="15" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>Dummy plug on bulkhead connector:</u><input type="text" name="DummyPlugDeploy" placeholder="y/n" size="3" class="right" > <br><br> 
+	</p>
+
+	<p class="small">
+	<u>setup persons initials:</u><input type="text" name="SetupPersonInitials" size="10" class="right" > <br><br> 
+	</p>
+					
+	</div>
+
+
+
+
+	<!-- ***************************************************************************** -->
+	<!-- Instrument Recovery -->
+	<div id="Recovery"> <h4  class="uline">IPS-5 Recovery Checklist</h4>
+
+	<p class="small">
+	IPS-5 serial number:<input type="text" name="IPSSerialNoR" size="15" class="right" > <br><br>
+	Mooring ID:<input type="text" name="RecoveryMooringID" size="15" class="right"  > <br><br>
+	Actual depth (m):<input type="text" name="ActualDepth" size="15" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>Purge plug released:</u><input type="text" name="PurgePlugRelease" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>pressurized?<tab>y/n:<input type="text" name="PurgePlugReleasePressurized" placeholder="y/n" size="3" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>Battery Checks:</u><input type="text" name="RecBattCheck" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>main voltage:<input type="text" name="RecBattCheckMainVolt" size="15" class="right" > <br><br>
+	<tab>Tx voltage:<input type="text" name="RecBattCheckTxVolt" size="15" class="right" > <br><br>
+	</p>
+
+	<br><br><br><br>
+	
+	<p class="small">
+	<u>Memory card check:</u><input type="text" name="RecMemCardCheck" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>memory used (MB):<input type="text" name="RecMemCardUsed" size="15" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+	<u>Real-time clock check:</u><input type="text" name="RealTimeClockCheck" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>instr. time/date:<input type="text" name="InstrCheckTimeDate" size="15" class="right" > <br><br>
+	<tab>actual time/date:<input type="text" name="ActualCheckTimeDate" size="15" class="right" > <br><br>
+	</p>
+
+	<br><br>
+
+	<p class="small">
+	<u>Data files downloaded:</u><input type="text" name="DataDownloaded" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>date downloaded:<input type="text" name="DateDownloaded" size="15" class="right" > <br><br>
+	<tab>range of file dates:<br><input type="text" name="DataDateRange" size="30" class="right" > <br><br>
+	</p>
+
+	<br><br>
+		
+	<p class="small">
+	<u>Sacrificial Zincs (% remaining):</u><input type="text" name="SacrificialZincsRecovery" placeholder="y/n" size="3" class="right" > <br><br> 
+	<tab>transducer head:<input type="text" name="ZincTransducerHeadRecovery" size="15" class="right" > <br><br>
+	<tab>bottom:<input type="text" name="ZincBottomRecovery" size="15" class="right" > <br><br>
+	</p>
+
+	<p class="small">
+    <u>Additional Notes:</u><textarea form="usrinput" name="Comments" rows="6" cols="40"></textarea>
+	</p>
+
+	<p class="small">
+	<u>Dummy plug on bulkhead connector:</u><input type="text" name="DummyPlugRecovery" placeholder="y/n" size="3" class="right" > <br><br> 
+	</p>
+	
+	<p class="small">
+	<u>recovery persons initials:</u><input type="text" name="RecoveryPersonInitials" size="3" class="right" > <br><br> 
+	</p>
+	
+	</div>
+
+	<div id="clear"></div>
+	</div>
+
+	<input type="submit" name="submit" value="Submit" >
+	</form><br></div>
+
+	<div id="bottom"> </div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>    
