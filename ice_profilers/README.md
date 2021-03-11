@@ -1,17 +1,14 @@
 # README
 
 [Ice Profiler Database][IPDB]
-================
 
 [pavlof.pmel.noaa.gov/bell/ice_profilers/][IPDB]
 
-Purpose:
---------
+## Purpose:
 
 A database and webportal exists for archiving and concatenating all relevant information regarding _cruises_, _moorings_, _instrument calibrations_, and _instrument history_.  This database also maintains general metadata information about *moorings and their locations*, *existing data sets*, and other pertinant information regarding the Ice Profilers affiliated with EcoFOCI.  
 
-General Use:
-------------
+## General Use:
 
 There are multiple ways to access the content of the EcoFOCI database currently housed on Pavlof:
 
@@ -22,7 +19,7 @@ There are multiple ways to access the content of the EcoFOCI database currently 
   
 		The later two options require admin rights for full functionality.  
 		
-## Basic Web Functionality:
+### Basic Web Functionality:
 
 Most users will perform one of the following three functions:  
 
@@ -30,7 +27,7 @@ Most users will perform one of the following three functions:
 * View existing Ice Profiler Records
 * View Ice Profiler Status
 
-## Extended Web Functionality:
+### Extended Web Functionality:
 
 ***Future:***  
 
@@ -38,10 +35,8 @@ Most users will perform one of the following three functions:
 + Update Existing Records (with authorization)  
 + Delete Records (with authorization)
 
--------------------------------------------------------------
 
 Database Structure:
--------------------
 **Parent Database --> IceProfilers**  
 
 **Child Tables --> Instruments (inst_iceprof)**  
@@ -53,9 +48,9 @@ Database Structure:
 		Is an active instrument
 		General Notes
 
-### Records should be updated as instruments are acquired, retired, or loaned
+#### Records should be updated as instruments are acquired, retired, or loaned
 
-####Note: As this is a relational database, instruments must be in the Instrument table before additional histories can be created.
+__Note: As this is a relational database, instruments must be in the Instrument table before additional histories can be created.__
 
 
 **Child Tables --> Instrument Calibrations (cal_iceprof)**  
@@ -66,7 +61,7 @@ Database Structure:
 		Date of Calibration
 		Calibration Factors
 		
-### Records should be updated as instruments are calibrated (especially if new calibration factors are determined)
+#### Records should be updated as instruments are calibrated (especially if new calibration factors are determined)
 
 
 **Child Tables --> Mooring Deployment Records (operations_iceprof, meta_iceprof)**  
@@ -74,7 +69,7 @@ Database Structure:
 	Mooring Deployment characteristics.
 		A unique Mooring ID is required for these tables.
 
-### Records should be updated as during active deployments (preparations, in-field, post analysis)
+#### Records should be updated as during active deployments (preparations, in-field, post analysis)
 
 
 **Child Tables --> Time Comparisons (timecheck_iceprof)**  
@@ -90,25 +85,21 @@ Database Structure:
 	Used to log versions of vendor software and firmware so that instruments are up-to-date when deployed
 
 
--------------------------------------------------------------
 
 
 ### Data Entry Tools:
 
 All Records can be added through the `Add New Records` tab on the database homepage.
 
--------------------------------------------------------------
 
 
 
 Cleanup Tasks:
---------------
 
 * Look for empty records
 * Maintain consistency with lat/lon format and time format  
 
 Future Plans:
--------------
 
 * Link deployment information (cruises and moorings) to data sets.  
 * Provide additional instrument characteristics on status page.  
@@ -116,11 +107,9 @@ Future Plans:
 * Provide Error Support Explicitly
 * Provide Updating ability
 
-Notes:
-------
+## Notes:
 
-ERRORS:
--------------
+## ERRORS:
 
 *Clues if you see the following errors:*  
 
