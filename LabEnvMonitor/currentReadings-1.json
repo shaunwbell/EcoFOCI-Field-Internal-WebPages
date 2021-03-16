@@ -1,0 +1,12 @@
+{"tempC": 32,
+ "tempAlert": "alert alert-warning",
+ "tempF": 90,
+ "messages": "What sort of message would be helpful.",
+ "days": 2,
+ "eCO2Alert": "alert alert-success",
+ "eCO2": 450,
+ "VOCAlert": "alert alert-success",
+ "VOC": 900,
+ "moistAlert": "alert alert-success",
+ "moisture": 30,
+ "datetime": 1498269422.2621739}

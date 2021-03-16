@@ -1,0 +1,15 @@
+{
+"time": "2020-05-20T16:14:27Z",
+"temperature": 24.7,
+"RH_Percent": 34.5,
+"SLP": 101777,
+"Altitude": -123.2,
+"UVA": 0,
+"UVB": 0,
+"UVindex": 0,
+"datetime": 1590016467.0,
+"messages": "trends calculated using last 3hrs, red is greater than 1 std change, blue is greater than -1std change",
+"days": 20,
+"tempAlert": "alert alert-info",
+"pressAlert": "alert alert-danger"
+}

@@ -1,0 +1,4 @@
+{
+"server": "http://downdraft.pmel.noaa.gov:8080/erddap/tabledap/LabEnvMonitor.html",
+"history": "all data is recorded in UTC but time elapsed on this website has to have conversions for timezones.... its hacky"
+}

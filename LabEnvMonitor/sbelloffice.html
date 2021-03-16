@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bell Office Envionmental Monitor</title>
+		<meta charset="utf-8">
+		<meta http-equiv="refresh" content="60">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../src_labenv_static/bootstrap/css/bootstrap.min.css">
+		<script src="../src_labenv_static/jQuery/jquery-3.2.1.min.js"></script>
+		<script src="../src_labenv_static/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../src_labenv_static/justgage/raphael-2.1.4.min.js"></script>
+		<!--<script src="../justgage-1.0.1.js"></script>-->
+		<script src="../src_labenv_static/justgage/justgage.js"></script>
+		<script src="../src_labenv_static/moment/moment.js"></script>
+		<script src="../src_labenv_static/moment/moment-timezone.js"></script>
+	</head>
+	<body onload="getCurrentReadings(); getCurrentInfo();">
+		<div class="container">
+			<div class="page-header">
+				<h3>Bell Office Env Monitor</h3>
+				<p><span id='datetimeSpan'></span></p>
+				<p><a id='erddapServer' href=''></a></p>
+			</div>
+			<div class="row">
+				<!-- Days Guage-->
+				<div class="col-sm-3" >
+					<div id="tempGauge"></div>
+				</div>
+				<div class="col-sm-8">
+					
+					<!-- Row 1 - Indicators-->
+					<div class="row">
+						<!-- Temp Indicator Guage-->
+						<div class="col-xs-4" id="tempPanel"></div>
+						
+						<!-- Moisture Indicator Guage-->
+						<div class="col-xs-4" id="moisturePanel"></div>
+
+						<!-- Pres Indicator Guage-->
+						<div class="col-xs-4" id="pressurePanel"></div>
+					</div>
+						
+					
+					<!-- Row 3 - Indicators-->
+					<div class="row">
+						<!-- UVA Indicator Guage-->
+						<div class="col-xs-4" id="UVAPanel"></div>
+						
+						<!-- VOC Indicator Guage-->
+						<div class="col-xs-4" id="UVBPanel"></div>
+
+						<!-- UVindex Indicator Guage-->
+						<div class="col-xs-4" id="UVindexPanel"></div>
+
+					</div>
+					
+									
+				
+				 </div>
+			</div>
+			<div class="row">
+			    <div class="col-sm-12">
+					<div id="actionPanel" class="panel panel-default">
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="row">
+			    <div class="col-sm-12">
+					<div id="historyPanel" class="panel panel-default">
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div class="row">
+			    <div class="col-sm-12">
+					<div class="well well-sm">
+					 <img src="../dynamic_data/VariousEnvMonitors/OfficeEnvMonitor/office_timeseries_30.png" alt="30day Office Timeseries Plot" width="100%"> 	
+					 <img src="../dynamic_data/VariousEnvMonitors/OfficeEnvMonitor/office_timeseries_180.png" alt="180day Office Timeseries Plot" width="100%"> 	
+					</div>
+
+					<div class="well well-sm">
+					 <img src="../dynamic_data/VariousEnvMonitors/OfficeEnvMonitor/office_horizonplot_30.png" alt="30day Office Horizion Plot" width="100%"> 	
+					 <img src="../dynamic_data/VariousEnvMonitors/OfficeEnvMonitor/office_horizonplot_180.png" alt="180day Office Horizion Plot" width="100%"> 	
+					</div>
+				</div>
+			</div>	
+
+			<div class="row">
+			    <div class="col-sm-12">
+					<div class="well well-sm">
+						<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> and <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+						<div>Graphs made by <a href="http://www.justgage.com" title="JustGage">Just Gage</a></div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>	  
+
+
+    <script>
+	
+	function getCurrentReadings() {
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var currentReadings = JSON.parse(this.responseText);
+
+				var days = currentReadings['days'];
+				var temperature = currentReadings['temperature'];
+                var RH_Percent = currentReadings['RH_Percent'];
+                var SLP = currentReadings['SLP'];
+				var UVA = currentReadings['UVA'];
+				var UVB = currentReadings['UVB'];
+				var UVindex = currentReadings['UVindex'];
+				var messages = currentReadings['messages'];
+				var tempAlert = currentReadings['tempAlert'];
+				var pressAlert = currentReadings['pressAlert'];
+				var moistAlert = currentReadings['moistAlert'];
+				var UVAAlert = currentReadings['UVAAlert'];
+				var UVBAlert = currentReadings['UVBAlert'];
+				var UVindexAlert = currentReadings['UVindexAlert'];
+				//var timezoneoffset = 8*60*60;
+				var timezoneoffset = 7*60*60;
+                var dateTime = currentReadings['datetime'] - timezoneoffset;
+                var days = currentReadings['days'];
+
+				//alert(currentTempReading);
+				
+				//handle date time of reading
+				var readingDateTime = moment.unix(dateTime);				
+				document.getElementById("datetimeSpan").textContent = "Last Reading: " + readingDateTime.fromNow();
+				
+				//handle Pressure			
+				writePanel(SLP, SLP + " Pa", "Barometric Pressure sensor", pressAlert, "pressurePanel", "barometer.svg");
+
+				//handle Temperature			
+				writePanel(temperature, temperature + "&#8451", "Temperature sensor", tempAlert, "tempPanel", "008-thermometer.svg");
+				
+				//handle Moisture				
+				writePanel(RH_Percent, RH_Percent + "%", "RH AQ senosor", moistAlert, "moisturePanel", "010-liquid-droplet-on-ground.svg");
+
+				//handle UVA
+				writePanel(UVA, UVA + " µW/cm2", "UVA", UVAAlert, "UVAPanel", "sun.svg")	;
+			
+				//handle wUVB
+				writePanel(UVB, UVB + " µW/cm2", "UVB", UVBAlert, "UVBPanel", "sun.svg");
+				
+				//handle wUVindex
+				writePanel(UVindex, UVindex + "", "UVindex", UVindexAlert, "UVindexPanel", "sun.svg");
+				
+				
+				
+				//write Actions pabnel
+				writeActionPanel('panel panel-info',messages);
+				
+				//handle chart
+				
+				var daysHotMax = 31;
+				if (days<daysHotMax){
+					var daysHotsGauge = new JustGage({
+						id: "tempGauge",
+						value: days,
+						min: 0,
+						max: daysHotMax,
+						title: "Day of Month ",
+						label: " out of " + daysHotMax + " days",
+						gaugeWidthScale: 0.2,
+						levelColorsGradient: false,
+						noGradient: true,
+						startAnimationTime: 1000,
+						showInnerShadow: true,
+						labelFontColor: "#000000",
+						relativeGaugeSize: true,
+						donut: true,
+						donutStartAngle: 90,
+						titlePosition: "below",
+						//titleMaxFontSize: 12,
+						//onAnimationEnd: kvLookup('onAnimationEnd', config, dataset, null), function after animation
+						//gaugeColor: "#FF0000"
+						valueFontColor: "#000000",
+						labelFontColor: "#000000",
+						levelColors: ["#2f4f4f"],
+						titleFontColor: "#000000"
+						//valueFontFamily: kvLookup('valueFontFamily', config, dataset, "Arial"),
+					});
+				
+				}else{
+				
+					//document.getElementById("tempGauge").text = "Compost is ready!";
+				
+					document.getElementById("tempGauge").innerHTML = "<div style='text-align:center' ><img src='icons/svg/sprout.svg' height='100px' class='img center-block'><h4>Compost is ready!</h4></div>";
+				}//end of handle chart
+				
+				
+			}	
+
+		}
+        //xmlhttp.open("GET","currentReadings.php?",true);
+        //cross origin request issues, update file locally periodically
+		xmlhttp.open("GET","OfficeEnvMonitor.json?",true);
+		
+        xmlhttp.send();
+
+	}
+
+	function getCurrentInfo() {
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var currentInfo = JSON.parse(this.responseText);
+
+				var server = currentInfo['server'];
+				var history = currentInfo['history'];
+
+				
+
+				document.getElementById("erddapServer").textContent = "ERDDAP Host: " + server;				
+				document.getElementById("erddapServer").href = server;				
+
+				//write history pabnel
+				writeHistoryPanel('panel panel-info', history);
+				
+			}	
+
+		}
+        //xmlhttp.open("GET","currentReadings.php?",true);
+        //cross origin request issues, update file locally periodically
+		xmlhttp.open("GET","OfficeEnvInfo.json?",true);
+		
+        xmlhttp.send();
+
+	}
+
+	function writePanel(reading, readingText, heading, alertType, panelID, image){
+		var panelHTML = 
+			'<div class="media">' +
+				'<div class="media-left">' +
+					'<img src="icons/svg/' + image + '" class="media-object" style="width:35px">' +
+				'</div>' +
+				'<div class="media-body">' +
+					'<h5 class="media-heading">' + heading + '</h5>' +
+					'<p><span>' + readingText + '</span></p>' +
+				'</div>' +
+			'</div>'
+			
+		document.getElementById(panelID).innerHTML = "<div class='" + alertType + "'>"+panelHTML+"</div>";
+			
+	
+	}
+	
+	function writeActionPanel(alertType, messages){
+		var panelHTML = 	'<div class="panel-heading">Actions</div>' +
+							'<div class="panel-body">' + 
+								messages +
+							'</div>'
+		document.getElementById('actionPanel').innerHTML = panelHTML;
+	
+	
+	}
+
+	function writeHistoryPanel(alertType, messages){
+		var panelHTML = 	'<div class="panel-heading">History</div>' +
+							'<div class="panel-body">' + 
+								messages +
+							'</div>'
+		document.getElementById('historyPanel').innerHTML = panelHTML;
+	
+	
+	}	
+	
+	
+    </script>
+	
+
+</html>

@@ -1,0 +1,4 @@
+{
+"server": "http://downdraft.pmel.noaa.gov:8080/erddap/tabledap/channel_843357_thingspeak.html",
+"history": "Originally deployed in Freeland home (inside) until Dec 2019. Installed in Shop Feb 2020. <br> ATRH sensor not working. <br> 3/29/2020 BP sensor swapped, appears new sensor reads higher but no comparison was taken."
+}
