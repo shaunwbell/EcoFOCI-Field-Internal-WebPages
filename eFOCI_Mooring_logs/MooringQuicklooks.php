@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mooring Quicklooks</title>
 <!-- Bootstrap theme -->
-<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
-<link rel="stylesheet" type="text/css" id="custom.css" href="../../scripts/css/custom.css" />
+<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
+<link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
 
 
 <!-- when using the dataTables javascript plugin, jquery and dataTables must be at top of page -->
 <!-- dataTables seems to only work well with a single table on a page-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../../scripts/jquery_1.11.0/jquery.min.js"></script>
+<script src="../scripts/jquery_1.11.0/jquery.min.js"></script>
 <!-- DataTables -->
-<script type="text/javascript" src="../../node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
 <script>
     $(document).ready(function() {
         $('table.table').dataTable( {
@@ -31,9 +31,9 @@
 <!-- local php includes
 ================================================== -->
 <?php 
-include('../../ecofoci_images/header.php'); 
-include('mooring_php_routines.php');
-include('nav_header.php');
+include('../ecofoci_images/header.php'); 
+include('php_routines/mooring_php_routines.php');
+include('php_routines/nav_header.php');
 ?>
 
 <!-- Bootstrap - Static navbar
@@ -54,14 +54,14 @@ include('nav_header.php');
 
 <p style="color:red;">Click on Instrument to update Mooring Log Record</p>
 
-<?php view_quicklook_select('../../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'); ?>
+<?php view_quicklook_select('../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'); ?>
 
 
 <!-- end content
 ================================================== -->
 
 
-    <p class="text-muted"><?php include('../../ecofoci_images/footer.php'); ?></p>
+    <p class="text-muted"><?php include('../ecofoci_images/footer.php'); ?></p>
 </div>
 
 <!-- end footer
@@ -75,11 +75,11 @@ include('nav_header.php');
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- jQuery backstretch for background responsive photos -->
-<script src="../../scripts/jquery.backstretch.js"></script>
+<script src="../scripts/jquery.backstretch.js"></script>
 <script>
-    $.backstretch(["../../ecofoci_images/backgrounds/KodiakMtns_Derobertis2006.png"]);
+    $.backstretch(["../ecofoci_images/backgrounds/KodiakMtns_Derobertis2006.png"]);
 </script>
 
 </body>
