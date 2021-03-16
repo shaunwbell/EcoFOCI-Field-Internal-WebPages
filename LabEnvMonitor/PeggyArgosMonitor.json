@@ -1,0 +1,17 @@
+{
+"time": "2020-03-04T22:22:28Z",
+"Temp_AQ": 24.81,
+"RH_AQ": 23.2,
+"BP_AQ": 102559,
+"TempB": 21.53,
+"RHB": 34.3,
+"BPB": 102458,
+"Co2_Conc": 1632,
+"VOC": 275,
+"datetime": 1583389348.0,
+"messages": "trends calculated using last 3hrs, red is greater than 1 std change, blue is greater than -1std change",
+"days": 4,
+"tempAlert": "alert alert-danger",
+"moistAlert": "alert alert-info",
+"pressAlert": "alert alert-info"
+}

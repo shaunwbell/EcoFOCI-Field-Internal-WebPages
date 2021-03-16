@@ -1,0 +1,4 @@
+{
+"server": "http://downdraft.pmel.noaa.gov:8080/erddap/tabledap/OfficeRedboard_WxStation.html",
+"history": "3/4/2020 - compared to handheld barometer this station reads .2mb low (1027.0-0.8 known offset) : 1025.98"
+}

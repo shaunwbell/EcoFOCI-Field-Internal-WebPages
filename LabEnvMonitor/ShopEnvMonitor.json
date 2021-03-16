@@ -1,0 +1,13 @@
+{
+"time": "2020-05-20T15:58:06Z",
+"entry_id": 125154,
+"temperature": null,
+"RH_Percent": null,
+"Barotemperature": 17.6,
+"SLP": 1013.23,
+"datetime": 1590015486.0,
+"messages": "trends calculated using last 3hrs, red is greater than 1 std change, blue is greater than -1std change",
+"days": 20,
+"tempAlert": "alert alert-info",
+"pressAlert": "alert alert-danger"
+}

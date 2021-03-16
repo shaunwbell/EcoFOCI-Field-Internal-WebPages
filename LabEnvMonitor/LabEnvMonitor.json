@@ -1,0 +1,19 @@
+{
+"time": "2020-04-15T18:20:05Z",
+"Temp_AQ": 24.43,
+"RH_AQ": 29.5,
+"BP_AQ": 102656,
+"TempB": 21.36,
+"RHB": 28.1,
+"BPB": 102555,
+"Co2_Conc": 840,
+"VOC": 67,
+"datetime": 1587000005.0,
+"messages": "no data in 3hr window to calculate trends",
+"days": 20,
+"tempAlert": "alert alert-warning",
+"pressAlert": "alert alert-warning",
+"moistAlert": "alert alert-warning",
+"eCO2Alert": "alert alert-warning",
+"VOCAlert": "alert alert-warning"
+}
