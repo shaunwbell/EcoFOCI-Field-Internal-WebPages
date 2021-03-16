@@ -1,0 +1,245 @@
+/* Mooring Reports CSS */
+
+
+/* CONTAINERS
+------------------------------*/
+ 
+div#container-wrap {
+    background-image: none;
+}
+ 
+#content-wrap {
+    /* margin:20px 20px 20px 20px; */
+    padding: 0
+    width:80%;;
+    min-height:1px;
+}
+
+
+/* body
+------------------------------*/
+
+body {
+    background:#FFFFFF;
+    width:100%%;
+    color:#000000;
+    padding:0;
+}
+
+h3 {
+    text-align: center
+}
+
+
+#header {
+    background-image:none;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    border:4px solid #000000;
+    margin:0 0 0 0;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:1em;
+}
+
+#MooringDetails {
+    background-image:none;
+    background-repeat: no-repeat;
+
+    background-color:#FFFFFF;
+    border:4px solid #000000;
+    margin:0 0 0 0;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+
+
+#Deployment { /*left handed box */
+    background-image:none;
+    background-repeat: no-repeat;
+
+    background-color:#FFFFFF;
+    float:left;
+    width:45%
+
+}
+
+h4 {
+    text-align: center
+}
+
+.uline {
+    text-decoration: underline;
+}
+
+.right {
+    float:right;
+}
+
+.left {
+    float:left;
+}
+.phpoutput {
+    font-weight: bold;
+    float:right;
+}
+
+.commentblock {
+    font-weight: bold;
+}
+#Recovery { /*right handed box */
+    background-image:none;
+    background-repeat: no-repeat;
+
+    background-color:#FFFFFF;
+    float:right;
+    width:45%
+
+}
+
+#clear{
+    clear: both;
+}
+
+#PreDeployment { /* 1st middle box */
+    background-image:none;
+    background-repeat: no-repeat;
+
+    background-color:#FFFFFF;
+    border:4px solid #000000;
+    margin:0 0 0 0;
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+#Comments { /* middle box */
+    page-break-before:always;
+    background-image:none;
+    background-repeat: no-repeat;
+
+    background-color:#FFFFFF;
+    border:4px solid #000000;
+    margin:0 0 0 0;
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+ 
+td {
+    position: relative;
+    padding: 5px 10px;
+}
+
+tr {
+  font-family: monospace;
+}
+
+.strikeout td:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid #111;
+    width: 100%;
+}
+
+#InstrumentDetails { /*bottom box */
+    background-image:none;
+    background-repeat: no-repeat;
+
+    background-color:#FFFFFF;
+    border:4px solid #000000;
+    margin:0 0 0 0;
+/*
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:2em;
+    padding-bottom:2em;
+*/
+}
+
+table 
+{
+width:100%;
+border: 1px solid black;}
+th
+{
+font-size:small;
+height:50px;
+border: 1px solid black;
+}
+td
+{
+border: 1px solid black;
+}
+}
+tr
+{
+border: 1px solid black;
+}
+
+.blank_row
+{
+    height: 10px !important; /* Overwrite any previous rules */
+    background-color: #000000;
+}
+
+#battery {
+    width:80%;
+    padding-left:1em;
+    font-weight: bold;
+}
+
+#footer {
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+    background-image:none;
+    background-repeat: no-repeat;
+
+    background-color:#FFFFFF;
+    border:4px solid #000000;
+}
+
+#bottom {
+    clear:both;
+    text-align:right;
+}
+
+h5 {
+    text-align: center
+}
+
+/* submit bottom area
+---------------------*/
+
+div {
+    box-sizing: border-box;
+    
+}
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    max-height: 75%;
+    border: 1px solid black;
+}
+.left-container {
+    flex: 0 1 50%;
+    min-height: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+    padding: .5em;
+}
+.right-container {
+    min-height: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+    padding: .5em;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}

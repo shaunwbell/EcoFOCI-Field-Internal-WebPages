@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
+Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/reports.css" />
+<title>Form Input Data</title>
+</head>
+
+
+
+<body>
+
+<div id="container-wrap">
+<div id="content-wrap">
+    <div id="container">
+
+    <form method="post" action="AddNewMooringRecords.php" id="usrinput">
+
+    
+    <div id="header"> <h3>New Mooring Record Form<h3></div>
+    
+    <!-- start form -->
+    <div id="MooringDetails"> 
+    MooringID:<input type="text" name="MooringID" size="15" placeholder="cannot be blank" required>
+    Project:<input type="text" name="Project" size="25" placeholder="project name" ><br><br>
+    <div id="Deployment" > <h4 class="uline">Deployment </h4><br> 
+    <p>Cruise Number:<input type="text" name="DeploymentCruiseNumber" size="15"  placeholder="ssyy-mm" class="right" > <br><br>
+    Deployment Date/Time (GMT):<input type="text" name="DeploymentDateTimeGMT" size="15" class="right"  > <br><br>
+    GPS latitude (N) :<input type="text" name="DeploymentLatitude" size="15" class="right" > <br><br>
+    GPS longitude (W):<input type="text" name="DeploymentLongitude" size="15" class="right" > <br><br> 
+    CTD cast no:<input type="text" name="DeploymentCTDcastNo" size="15" class="right" > <br><br> 
+    Actual Deployment depth:<input type="text" name="DeploymentDepth" size="15" class="right" > <br><br><br>
+    Timekeeper:<input type="text" name="DeploymentTimekeeper" size="15" class="right" > <br><br>
+    Chief Scientist:<input type="text" name="DeploymentChiefScientist" size="15" class="right" > <br><br></p></div>
+    
+    <div id="Recovery"> <h4  class="uline">Recovery </h4><br>
+    <p>Cruise Number:<input type="text" name="RecoveryCruiseNumber" size="15"  placeholder="ssyy-mm" class="right" > <br><br>
+    Recovery Date/Time (GMT):<input type="text" name="RecoveryDateTimeGMT" size="15" class="right" > <br><br>
+    GPS latitude (N):<input type="text" name="RecoveryLatitude" size="15" class="right" > <br><br>
+    GPS longitude (W):<input type="text" name="RecoveryLongitude" size="15" class="right" > <br><br> 
+    CTD cast no:<input type="text" name="RecoveryCTDcastNo" size="15" class="right" > <br><br> 
+    <br><br><br>
+    Timekeeper:<input type="text" name="RecoveryTimekeeper" size="15" class="right" > <br><br>
+    Chief Scientist:<input type="text" name="RecoveryChiefScientist" size="15" class="right" > <br><br></p></div>
+
+    <div id="clear"></div>
+    </div>
+
+    <div id="PreDeployment"> <h4  class="uline">Pre-Deployment </h4><br>
+    <p>Estimated latitude (N):<input type="text" name="PreLatitude" size="15" class="right" > <br><br>
+    Estimated longitude (W):<input type="text" name="PreLongitude" size="15" class="right" > <br><br> 
+    Estimated Deployment depth:<input type="text" name="EstimatedDepth" size="15" class="right" > <br><br>
+    Estimated Recovery Date:<input type="text" name="EstimatedRecoveryDate" size="15" placeholder="yyyy-mm-dd" class="right" > <br><br></p>
+    </div>    
+    
+    <div id="Comments"> Comments: <br><br> <textarea form="usrinput" name="Comments" 
+        placeholder="Type Deployment and Recovery Comments" rows="10" cols="80"></textarea></div>
+    <!-- complex table for all instrument details ARG!!!-->
+    <div id="InstrumentDetails"> 
+    <table>
+    <tr>
+    <th> Depth </th>
+    <th> Instrument </th>
+    <th> Serial No. </th>
+    <th> PreDeployment Notes</th>
+    </tr>
+    <tr>
+    <td> <input type="text" name="inst[0][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[0][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[0][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[0][PreDeploymentNotes]" size="30" > </td>
+    </tr>    
+    <tr>
+    <td> <input type="text" name="inst[1][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[1][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[1][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[1][PreDeploymentNotes]" size="30" > </td>
+    </tr>
+    <tr>
+    <td> <input type="text" name="inst[2][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[2][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[2][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[2][PreDeploymentNotes]" size="30" > </td>
+    </tr>    
+    <tr>
+    <td> <input type="text" name="inst[3][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[3][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[3][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[3][PreDeploymentNotes]" size="30" > </td>
+    </tr>
+    <tr>
+    <td> <input type="text" name="inst[4][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[4][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[4][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[4][PreDeploymentNotes]" size="30" > </td>
+    </tr>    
+    <tr>
+    <td> <input type="text" name="inst[5][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[5][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[5][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[5][PreDeploymentNotes]" size="30" > </td>
+    </tr>
+    <tr>
+    <td> <input type="text" name="inst[6][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[6][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[6][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[6][PreDeploymentNotes]" size="30" > </td>
+    </tr>    
+    <tr>
+    <td> <input type="text" name="inst[7][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[7][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[7][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[7][PreDeploymentNotes]" size="30" > </td>
+    </tr>
+    <tr>
+    <td> <input type="text" name="inst[8][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[8][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[8][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[8][PreDeploymentNotes]" size="30" > </td>
+    </tr>
+    <tr>
+    <td> <input type="text" name="inst[9][depth]" size="4" > </td>
+    <td> <input type="text" name="inst[9][InstType]" size="30" > </td>
+    <td> <input type="text" name="inst[9][serialnum]" size="30" > </td>
+    <td> <input type="text" name="inst[9][PreDeploymentNotes]" size="30" > </td>
+    </tr>
+</table>
+    
+    <br><br>Does the release have new batteries?: 
+            <input type="radio" name="Release" value="y">Yes
+            <input type="radio" name="Release" value="n">No<br>
+    If not new, how many months were batteries used?<input type="text" name="release_batt" size="5">months
+            
+    <br><br><input type="text" name="Recorder" size="20" placeholder="Digital Signature">
+            <input type="submit" name="submit" value="Submit">
+            </form><br></div>
+    <div id="footer"> PMEL EcoFOCI</div>
+    <div id="bottom"> </div>
+    </div>
+</div>
+</div>
+ 
+</body>
+</html>
