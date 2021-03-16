@@ -4,19 +4,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drifter Status Update</title>
+<title>Mooring Quicklooks</title>
 <!-- Bootstrap theme -->
 <link rel="stylesheet" type="text/css" id="node_modules/bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
-<link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/bootstrap_datatables/bootstrap_datatables.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
+
 
 <!-- when using the dataTables javascript plugin, jquery and dataTables must be at top of page -->
 <!-- dataTables seems to only work well with a single table on a page-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../scripts/jquery_1.11.0/jquery.min.js"></script>
 <!-- DataTables -->
-<script type="text/javascript" src="../scripts/DataTables-1.10.12/media/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="../scripts/bootstrap_datatables/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="../node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
 <script>
     $(document).ready(function() {
         $('table.table').dataTable( {
@@ -24,12 +23,16 @@
         } );
     } );
 </script>
+
 </head>
 
 <body>
 
-<?php include('../ecofoci_images/header.php'); 
-include('php_routines/drifter_php_routines.php');
+<!-- local php includes
+================================================== -->
+<?php 
+include('../ecofoci_images/header.php'); 
+include('php_routines/mooring_php_routines.php');
 include('php_routines/nav_header.php');
 ?>
 
@@ -39,16 +42,19 @@ include('php_routines/nav_header.php');
 
 
 <!-- Static navbar -->
-<?php build_navbar("Drifter Status") ?>
+<?php build_navbar("Operations") ?>
 
 <!-- End Navigation
 ================================================== -->
 
 <div class="col-md-12 center-block" style="padding:20px;">
 
-<h3>Argos Drifter Status</h3>
 
-<?php argos_drifter_status('drifter_ids') ?>
+<h3>Instrument Operations Records for Mooring Deployments</h3>   
+
+<p style="color:red;">Click on Instrument to update Mooring Log Record</p>
+
+<?php view_quicklook_select('../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'); ?>
 
 
 <!-- end content
@@ -63,15 +69,17 @@ include('php_routines/nav_header.php');
 
 </div>
 
+
 <noscript><div >This Website requires your browser to be JavaScript enabled.</div></noscript>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery backstretch for background responsive photos -->
 <script src="../scripts/jquery.backstretch.js"></script>
 <script>
-    $.backstretch(["../ecofoci_images/backgrounds/peggy_buoy.jpg"]);
+    $.backstretch(["../ecofoci_images/backgrounds/KodiakMtns_Derobertis2006.png"]);
 </script>
 
 </body>
