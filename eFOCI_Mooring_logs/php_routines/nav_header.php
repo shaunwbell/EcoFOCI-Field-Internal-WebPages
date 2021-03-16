@@ -52,7 +52,7 @@ array("Dynamic Met. Plots 2013","../dynamic_data/ArgosMooring/028882y2013_norang
 array("Dynamic Met. Plots 2012","../dynamic_data/ArgosMooring/028882y2012_norangeselector.html",2),
 array("Dynamic Met. Plots 2011","../dynamic_data/ArgosMooring/028882y2011_norangeselector.html",3),
 array("Utilities","#",1),
-array("Demo Mooring Quick Looks","../eFOCI_Mooring_logs/php_routines/MooringQuicklooks.php",2),
+array("Demo Mooring Quick Looks","../eFOCI_Mooring_logs/MooringQuicklooks.php",2),
 array("Mooring Status Summary","../eFOCI_Mooring_logs/utilities_summary_mooringdatastatus.php",2),
 array("Mooring Instrument Data Status","../eFOCI_Mooring_logs/utilities_mooringdatastatus.php",2),
 array("Find Nearest CTD","../eFOCI_Mooring_logs/findnearestctd.php",2),

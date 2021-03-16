@@ -1,7 +1,7 @@
 <html>
 <head>
-<script type="text/javascript"  src="../../scripts/dygraph-combined.js"></script>
-<script type="text/javascript"  src="../../scripts/dygraphs-master/src/extras/synchronizer.js"></script>
+<script type="text/javascript"  src="../scripts/dygraph-combined.js"></script>
+<script type="text/javascript"  src="../scripts/dygraphs-master/src/extras/synchronizer.js"></script>
 </head>
 <body>
 
@@ -22,7 +22,7 @@ $MooringID = htmlspecialchars($_GET['MooringID']);
     document.getElementById("Fch_906"),
 
     // CSV or path to a CSV file.
-    <?php echo '"../../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
+    <?php echo '"../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
           {
             title: '',
             ylabel: '',
@@ -40,7 +40,7 @@ $MooringID = htmlspecialchars($_GET['MooringID']);
     document.getElementById("fluor_3031"),
 
     // CSV or path to a CSV file.
-    <?php echo '"../../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
+    <?php echo '"../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
           {
             title: '',
             ylabel: '',
@@ -58,7 +58,7 @@ $MooringID = htmlspecialchars($_GET['MooringID']);
     document.getElementById("fluorstd_2031"),
 
     // CSV or path to a CSV file.
-    <?php echo '"../../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
+    <?php echo '"../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
           {
             title: '',
             ylabel: '',
@@ -76,7 +76,7 @@ $MooringID = htmlspecialchars($_GET['MooringID']);
     document.getElementById("indexdiv"),
 
     // CSV or path to a CSV file.
-    <?php echo '"../../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
+    <?php echo '"../dynamic_data/EcoFOCI_Moorings/Mooring_CSV/'.$MooringID.'.csv"';?>,
           {
             title: '',
             ylabel: '',
