@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Instrument Summary Results</title>
 <!-- Bootstrap theme -->
-<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
+<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../node_modules/bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/bootstrap_datatables/bootstrap_datatables.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
 
@@ -110,7 +110,7 @@ $EndYear = htmlspecialchars($_GET['EndYear']);
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script src="../scripts/jquery.backstretch.js"></script>
 <script>

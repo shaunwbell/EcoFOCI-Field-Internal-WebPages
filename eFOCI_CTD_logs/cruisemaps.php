@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cruise Maps</title>
 <!-- Bootstrap theme -->
-<link rel="stylesheet" type="text/css" id="node_modules/bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
+<link rel="stylesheet" type="text/css" id="node_modules/bootstrap.css" href="../node_modules/bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/bootstrap_datatables/bootstrap_datatables.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
 
@@ -69,7 +69,7 @@ include('php_routines/nav_header.php');
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script src="../scripts/jquery.backstretch.js"></script>
 <script>

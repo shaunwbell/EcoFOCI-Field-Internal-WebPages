@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Instrument Inventory and Status (All)</title>
 <!-- Bootstrap theme -->
-<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
+<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../node_modules/bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
 
 </head>
@@ -211,7 +211,7 @@ include('php_routines/nav_header.php');
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../scripts/jquery_1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- sortable data tables -->
 <script src="../node_modules/datatables/examples/resources/bootstrap/3/dataTables.bootstrap.js"></script>
 <!-- jQuery backstretch for background responsive photos -->

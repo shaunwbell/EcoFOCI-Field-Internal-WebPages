@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mooring: Data Processing Status</title>
 <!-- Bootstrap theme -->
-<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
+<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../node_modules/bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 </head>
@@ -62,7 +62,7 @@ include('php_routines/haversine.php');
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../scripts/jquery_1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../scripts/jquery.backstretch.js"></script>
 <script type="text/javascript" src="../scripts/DataTables-1.10.12/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="../scripts/bootstrap_datatables/dataTables.bootstrap.js"></script>

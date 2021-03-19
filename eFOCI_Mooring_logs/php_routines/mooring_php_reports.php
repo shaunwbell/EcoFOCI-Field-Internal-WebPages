@@ -176,7 +176,13 @@ function last_operations_report($insttable,$caltable,$ActiveOnly){
         $row_class='danger';
         } elseif ($row['ServiceStatus'] == 'OTHER' and $ActiveOnly == 'False'){
         $row_class='danger';        
+        } elseif ($row['ServiceStatus'] == 'LOSTATSEA' and $ActiveOnly == 'False'){
+        $row_class='danger';    
         } elseif ($row['ServiceStatus'] == 'RETIRED' and $ActiveOnly == 'True'){
+        continue;
+        } elseif ($row['ServiceStatus'] == 'OTHER' and $ActiveOnly == 'True'){
+        continue;        
+        } elseif ($row['ServiceStatus'] == 'LOSTATSEA' and $ActiveOnly == 'True'){
         continue;
         } elseif (($row['ServiceStatus'] != 'RETIRED') and ($row['CalDate'] == '')){
         $row_class='active';
@@ -242,18 +248,24 @@ function last_operations_report_wpressure($insttable,$caltable,$ActiveOnly){
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
 
         if ($row['ServiceStatus'] == 'RETIRED' and $ActiveOnly == 'False'){
-        $row_class='danger';
-        } elseif ($row['ServiceStatus'] == 'OTHER' and $ActiveOnly == 'False'){
-        $row_class='danger';    
-        } elseif ($row['ServiceStatus'] == 'RETIRED' and $ActiveOnly == 'True'){
-        continue;
-        } elseif (($row['ServiceStatus'] != 'RETIRED') and ($row['CalDate'] == '')){
-        $row_class='active';
-        } elseif (($row['ServiceStatus'] != 'RETIRED') and (days_since_date($row['CalDate']) > 1095)) {
-        $row_class='info';
-        } else {
-        $row_class='';
-        }
+            $row_class='danger';
+            } elseif ($row['ServiceStatus'] == 'OTHER' and $ActiveOnly == 'False'){
+            $row_class='danger';        
+            } elseif ($row['ServiceStatus'] == 'LOSTATSEA' and $ActiveOnly == 'False'){
+            $row_class='danger';    
+            } elseif ($row['ServiceStatus'] == 'RETIRED' and $ActiveOnly == 'True'){
+            continue;
+            } elseif ($row['ServiceStatus'] == 'OTHER' and $ActiveOnly == 'True'){
+            continue;        
+            } elseif ($row['ServiceStatus'] == 'LOSTATSEA' and $ActiveOnly == 'True'){
+            continue;
+            } elseif (($row['ServiceStatus'] != 'RETIRED') and ($row['CalDate'] == '')){
+            $row_class='active';
+            } elseif (($row['ServiceStatus'] != 'RETIRED') and (days_since_date($row['CalDate']) > 1095)) {
+            $row_class='info';
+            } else {
+            $row_class='';
+            }
 
         if (($row['ServiceStatus'] != 'RETIRED') and ($row['deployed'] == 'y') and ($row['recovered'] == '')) {
         $row_class='warning';

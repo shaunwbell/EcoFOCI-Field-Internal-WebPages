@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Instrument Maintenance Status</title>
 <!-- Bootstrap theme -->
-<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
+<link rel="stylesheet" type="text/css" id="bootstrap.css" href="../node_modules/bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/bootstrap_datatables/bootstrap_datatables.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
 
@@ -65,6 +65,7 @@ At the moment, this information is centralized with S.Bell.  Please send him inf
     <li><a href="#AD" data-toggle="tab">Calibrate</a></li>
     <li><a href="#AE" data-toggle="tab">Other</a></li>
     <li><a href="#AF" data-toggle="tab">Good</a></li>
+    <li><a href="#AG" data-toggle="tab">Lost At Sea</a></li>
   </ul>
   <div class="tabbable">
     <div class="tab-content">
@@ -86,6 +87,9 @@ At the moment, this information is centralized with S.Bell.  Please send him inf
       <div class="tab-pane" id="AF">
         <p><?php view_instrument_servicestatus('GOOD'); ?></p>
       </div>
+      <div class="tab-pane" id="AG">
+        <p><?php view_instrument_servicestatus('LOSTATSEA'); ?></p>
+      </div>      
     </div>
   </div> <!-- /tabbable -->
   
@@ -106,7 +110,7 @@ At the moment, this information is centralized with S.Bell.  Please send him inf
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../scripts/jquery.backstretch.js"></script>
 <script>
     $.backstretch(["../ecofoci_images/backgrounds/peggy_buoy.jpg"]);

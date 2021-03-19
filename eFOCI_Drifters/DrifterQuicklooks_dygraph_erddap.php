@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" id="node_modules/bootstrap.css" href="../bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
+<link rel="stylesheet" type="text/css" id="node_modules/bootstrap.css" href="../node_modules/bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.1/leaflet.css" />
 
 <link rel="stylesheet" type="text/css" id="dygraph.css" href="../node_modules/dygraphs/dist/dygraph.css" />
