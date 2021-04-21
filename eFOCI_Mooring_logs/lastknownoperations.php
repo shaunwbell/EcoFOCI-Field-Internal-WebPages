@@ -51,9 +51,10 @@ include('php_routines/nav_header.php');
     <li><a href="#AAB" data-toggle="tab">Conductivity (SBE-4)</a></li>
     <li><a href="#AAC" data-toggle="tab">DO (SBE-43)</a></li>
     <li><a href="#AAD" data-toggle="tab">CTD (911 / 9p11)</a></li>
-    <li><a href="#AAE" data-toggle="tab">Seacat Profiler (SBE-19)</a></li>
-    <li><a href="#AAF" data-toggle="tab">Pumps</a></li>
-    <li><a href="#AAG" data-toggle="tab">Transmissometers</a></li>
+    <li><a href="#AAE" data-toggle="tab">CTD (Prawler)</a></li>
+    <li><a href="#AAF" data-toggle="tab">Seacat Profiler (SBE-19)</a></li>
+    <li><a href="#AAG" data-toggle="tab">Pumps</a></li>
+    <li><a href="#AAH" data-toggle="tab">Transmissometers</a></li>
   </ul>
   <div class="tabbable">
     <div class="tab-content">
@@ -70,12 +71,15 @@ include('php_routines/nav_header.php');
         <p><?php last_operations_report('inst_sbe9','cal_sbe9','False'); ?></p>        
       </div>
       <div class="tab-pane" id="AAE">
+        <p><?php last_operations_report('inst_sbeprawler','cal_sbeprawler','False'); ?></p>        
+      </div>      
+      <div class="tab-pane" id="AAF">
         <p><?php last_operations_report('inst_sbe19','cal_sbe19','False'); ?></p>        
       </div>
-      <div class="tab-pane" id="AAF">
+      <div class="tab-pane" id="AAG">
         <p><?php last_operations_report('inst_sbe5','cal_sbe5','False'); ?></p>        
       </div>
-      <div class="tab-pane" id="AAG">
+      <div class="tab-pane" id="AAH">
         <p><?php last_operations_report('inst_trans','cal_trans','False'); ?></p>        
       </div>
     </div>
