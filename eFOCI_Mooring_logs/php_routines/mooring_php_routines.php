@@ -740,6 +740,8 @@ function calibration_input_form_new($InstID) {
                     union all
                     select  InstID, InstType, 'inst_sbe9' as instrument_table, 'cal_sbe9' as calibration_table FROM inst_sbe9
                     union all
+                    select  InstID, InstType, 'inst_sbeprawler' as instrument_table, 'cal_sbeprawler' as calibration_table FROM inst_sbeprawler
+                    union all
                     select  InstID, InstType, 'inst_spn1' as instrument_table, 'cal_spn1' as calibration_table FROM inst_spn1
                     union all
                     select  InstID, InstType, 'inst_wetstarfluor' as instrument_table, 'cal_wetstarfluor' as calibration_table FROM inst_wetstarfluor
