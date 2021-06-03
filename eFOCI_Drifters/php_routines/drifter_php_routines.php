@@ -26,7 +26,7 @@ function argos_drifter_id_new() {
 
    
     
-    $con = dbConnection('../_drifters.php');
+    $con = dbConnection('../db_configs/db_configdb_configs/db_config_drifters.php');
     $query = "SHOW FULL COLUMNS FROM drifter_ids";
     $result = $con->query($query) or die($con->error.__LINE__);
 
@@ -129,7 +129,7 @@ function argos_drifter_id_update() {
 
    
     
-    $con = dbConnection('../_drifters.php');
+    $con = dbConnection('../db_configs/db_config_drifters.php');
     $query = "SHOW FULL COLUMNS FROM drifter_ids";
     $result = $con->query($query) or die($con->error.__LINE__);
 
@@ -232,7 +232,7 @@ function argos_drifter_id_update() {
 // generate table of drifter attributes from database
 function argos_drifter_status($tablename) {
 
-    $con = dbConnection('../_drifters.php');
+    $con = dbConnection('../db_configs/db_config_drifters.php');
 
     //Get MooringID
     $query = "SELECT * FROM $tablename ORDER BY `ArgosNumber` DESC";
@@ -276,7 +276,7 @@ function argos_drifter_quicklooks($DrifterYear) {
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');
 
-    $con = dbConnection('../_drifters.php');
+    $con = dbConnection('../db_configs/db_config_drifters.php');
 
     //Get MooringID
     $query = "Select * from (SELECT * FROM drifter_ids WHERE `LastKnownTransmission` <= '".($DrifterYear+1)."-01-01' AND `LastKnownTransmission` > '".($DrifterYear)."-01-01' ORDER BY `ArgosNumber` DESC limit 1000) as grp Group By ArgosNumber";
@@ -326,7 +326,7 @@ function argos_drifter_quicklooks_erddap($DrifterYear) {
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');
 
-    $con = dbConnection('../_drifters.php');
+    $con = dbConnection('../db_configs/db_config_drifters.php');
 
     //Get MooringID
     $query = "Select * from (SELECT * FROM drifter_ids WHERE `LastKnownTransmission` <= '".($DrifterYear+1)."-01-01' AND `LastKnownTransmission` > '".($DrifterYear)."-01-01' ORDER BY `ArgosNumber` DESC limit 1000) as grp Group By ArgosNumber";
@@ -376,7 +376,7 @@ function argos_drifter_gallery($DrifterYear) {
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');
 
-    $con = dbConnection('../_drifters.php');
+    $con = dbConnection('../db_configs/db_config_drifters.php');
 
     //Get MooringID
     $query = "SELECT * FROM (SELECT * FROM drifter_ids WHERE `LastKnownTransmission` <= '".($DrifterYear+1)."-01-01' AND `LastKnownTransmission` > '".($DrifterYear)."-01-01' ORDER BY `ArgosNumber` DESC LIMIT 1000) as grp group by ArgosNumber";
@@ -409,7 +409,7 @@ function argos_drifter_gallery_historic($DrifterYear) {
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');
 
-    $con = dbConnection('../_drifters.php');
+    $con = dbConnection('../db_configs/db_config_drifters.php');
 
     //Get MooringID
     $query = "SELECT * FROM drifter_ids_pre2015 WHERE `ReleaseDate` <= '".($DrifterYear+1)."-01-01' AND `ReleaseDate` > '".($DrifterYear)."-01-01' ORDER BY `ArgosNumber` DESC";
