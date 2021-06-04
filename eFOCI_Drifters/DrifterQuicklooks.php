@@ -49,7 +49,7 @@ $DrifterYear = htmlspecialchars($_GET['DrifterYear']);
 
 <div class="col-md-12 center-block" style="padding:20px;">
 
-<p> <strong> The highlighting of the background around the drifter image is coded as follows: </strong </p>
+<p> <strong> The highlighting of the background around the drifter image is coded as follows: </strong> </p>
 <p> <em style="color: red;">Red</em> Stopped reporting more than a week ago </p>
 <p> <em style="color: yellow;">Yellow</em> Stopped reporting in last Week </p>
 <p> <em style="color: blue;">Blue</em> Reported within last 24 hours </p>

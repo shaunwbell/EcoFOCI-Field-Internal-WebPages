@@ -26,7 +26,7 @@ function argos_drifter_id_new() {
 
    
     
-    $con = dbConnection('../db_configs/db_configdb_configs/db_config_drifters.php');
+    $con = dbConnection('../db_configs/db_config_drifters.php');
     $query = "SHOW FULL COLUMNS FROM drifter_ids";
     $result = $con->query($query) or die($con->error.__LINE__);
 
@@ -240,8 +240,7 @@ function argos_drifter_status($tablename) {
     $result = $con->query($query) or die($con->error.__LINE__);
     
     echo '<div class="table-responsive" ><table class="table table-condensed table-hover table-bordered ">
-  <thead>
-    <tr>'.PHP_EOL;
+  <thead><tr>'.PHP_EOL;
 
     //Get headers from database column names
     $row = $result->fetch_array(MYSQLI_ASSOC); 
@@ -272,6 +271,7 @@ function argos_drifter_status($tablename) {
 function argos_drifter_quicklooks($DrifterYear) {
 
     //Get Current day
+    date_default_timezone_set('America/Los_Angeles');
     $transdate_today = new DateTime();
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');
@@ -322,6 +322,7 @@ function argos_drifter_quicklooks($DrifterYear) {
 function argos_drifter_quicklooks_erddap($DrifterYear) {
 
     //Get Current day
+    date_default_timezone_set('America/Los_Angeles');
     $transdate_today = new DateTime();
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');
@@ -372,6 +373,7 @@ function argos_drifter_quicklooks_erddap($DrifterYear) {
 function argos_drifter_gallery($DrifterYear) {
 
     //Get Current day
+    date_default_timezone_set('America/Los_Angeles');
     $transdate_today = new DateTime();
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');
@@ -405,6 +407,7 @@ function argos_drifter_gallery($DrifterYear) {
 function argos_drifter_gallery_historic($DrifterYear) {
 
     //Get Current day
+    date_default_timezone_set('America/Los_Angeles');
     $transdate_today = new DateTime();
     $transdate_today->modify('-0 day');
     $transdate_today = $transdate_today->format('Y-m-d');

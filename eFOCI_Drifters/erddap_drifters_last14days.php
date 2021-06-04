@@ -78,7 +78,7 @@ include('php_routines/nav_header.php');
         }
     }
     // cors must be enabled in Tomcat / Apache for erddap access
-    var geojsonLayer = new L.geoJson.ajax("http://akutan.pmel.noaa.gov:8080/erddap/tabledap/2020_Argos_Drifters_NRT.geoJson?&time>now-14days", {  
+    var geojsonLayer = new L.geoJson.ajax("http://akutan.pmel.noaa.gov:8080/erddap/tabledap/2021_Argos_Drifters_NRT.geoJson?&time>now-14days", {  
         pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng, {
             radius: 4,

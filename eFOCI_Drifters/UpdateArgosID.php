@@ -15,7 +15,7 @@ $CruiseID = htmlspecialchars($_GET['CruiseID']);
 $DrogueDepth = htmlspecialchars($_GET['DrogueDepth']);
 
 //Connect to DB
-$con = dbConnection('../_drifters.php');
+$con = dbConnection('../db_config/db_config_drifters.php');
 
 
 $insert = "UPDATE `drifter_ids` SET ReleaseDate='".$ReleaseDate."', RecoveryDate='".$RecoveryDate.

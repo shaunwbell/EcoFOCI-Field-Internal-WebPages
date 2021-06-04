@@ -49,19 +49,19 @@ include('php_routines/nav_header.php');
 <tr><th>
 
 <?php 
-foreach (range(2019, 2018, -1) as $year) {
+foreach (range(2021, 2018, -1) as $year) {
     echo "<h3><a href ='DrifterQuicklooks_erddap.php?DrifterYear=".$year."'>".$year." ERDDAP</a></h3>";
 }
 ?>
 <?php 
-foreach (range(2019, 1986, -1) as $year) {
+foreach (range(2021, 1986, -1) as $year) {
     echo "<h3><a href ='DrifterQuicklooks.php?DrifterYear=".$year."'>".$year."</a></h3>";
 }
 ?>
 
 </th><th>
 <?php 
-foreach (range(2019, 2014, -1) as $year) {
+foreach (range(2021, 2014, -1) as $year) {
     echo "<h3><a href ='DrifterGallery.php?DrifterYear=".$year."'>".$year."</a></h3>";
 }
 
