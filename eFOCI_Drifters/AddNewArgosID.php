@@ -15,8 +15,7 @@ $CruiseID = htmlspecialchars($_GET['CruiseID']);
 $DrogueDepth = htmlspecialchars($_GET['DrogueDepth']);
 
 //Connect to DB
-$con = dbConnection('../db_config/db_config_drifters.php');
-
+$con = dbConnection('../db_configs/db_config_drifters.php');
 
 $insert = "INSERT INTO `drifter_ids` (ArgosNumber, ReleaseDate, IsActive, IsMooring, DeploymentWaters, 
     ReleaseLat, ReleaseLon, Comments, CruiseID, DrogueDepth) VALUES ('".$ArgosNumber."',
