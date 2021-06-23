@@ -2,55 +2,6 @@
 
 include('php_routines/cruise_php_routines.php');
 
-
-//AddNewRecords
-
-/*------------------------------------------------------------------------------------*/
-//Cast DB add
-/* DB structure
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Vessel` text NOT NULL COMMENT 'Full Name (e.g.Dyson)',
-  `CruiseID` varchar(8) NOT NULL DEFAULT '' COMMENT 'ssYY-MM',
-  `Project_Leg` text COMMENT 'leg1/leg2',
-  `Project` text COMMENT 'project name',
-  `StationNo_altname` text,
-  `ConsecutiveCastNo` varchar(6) NOT NULL DEFAULT '' COMMENT 'CTD001',
-  `LatitudeDeg` varchar(4) NOT NULL DEFAULT '' COMMENT '(+/N , -/S)',
-  `LatitudeMin` float NOT NULL COMMENT 'decimal seconds',
-  `LongitudeDeg` int(3) NOT NULL COMMENT '(+/W, -/E)',
-  `LongitudeMin` float NOT NULL COMMENT 'decimal seconds',
-  `GMTDay` int(2) NOT NULL COMMENT '0-31',
-  `GMTMonth` int(2) NOT NULL COMMENT '0-12',
-  `GMTYear` int(4) NOT NULL COMMENT 'yyyy',
-  `GMTTime` time NOT NULL DEFAULT '00:00:00' COMMENT 'hh:mm:ss',
-  `DryBulb` float NOT NULL COMMENT 'xx.xx',
-  `RelativeHumidity` float NOT NULL COMMENT 'xxx %',
-  `WetBulb` float NOT NULL COMMENT 'yy.yy',
-  `Pressure` int(4) DEFAULT NULL COMMENT 'mb',
-  `SeaState` varchar(4) DEFAULT NULL COMMENT 'not required',
-  `Visibility` varchar(4) DEFAULT NULL COMMENT 'not required',
-  `WindDir` int(3) NOT NULL DEFAULT '-999' COMMENT 'xxx (degrees)',
-  `WindSpd` int(2) NOT NULL DEFAULT '-99' COMMENT 'xx (knots)',
-  `CloudAmt` varchar(4) DEFAULT NULL COMMENT 'not required',
-  `Type` varchar(4) DEFAULT NULL COMMENT 'not required',
-  `Weather` varchar(4) DEFAULT NULL COMMENT 'not required',
-  `BottomDepth` int(4) NOT NULL DEFAULT '-9999' COMMENT 'xxxx (meters)',
-  `StationNameID` varchar(12) DEFAULT NULL COMMENT '5 characters usually',
-  `MaxDepth` int(4) NOT NULL DEFAULT '-9999' COMMENT 'meters',
-  `InstrumentSerialNos` text COMMENT 'id->SN - Press SN = 9tSN0772,',
-  `Notes` text,
-  `isMooringProfileCast` varchar(1) NOT NULL DEFAULT 'n' COMMENT 'y/n ',
-  `FileName` text,
-  `MooringID` varchar(12) DEFAULT NULL COMMENT 'mooringID if calibration cast',
-  `NutrientBtlDepths` text,
-  `OxygenBtlDepths` text,  
-  `SalinityBtlDepths` text,
-  `ChlorophyllBtlDepths` text  
-  `WaterMassCode` varchar(1) NOT NULL DEFAULT 'G' COMMENT '(A)rctic, (G)ulf of Alaska, (B)ering Sea,\\n				  (S)helikof Strait, (P)uget Sound, (V)ents',
-  `InstrumentType` varchar(20) NOT NULL DEFAULT 'SBE911plus' COMMENT 'CTD-DeckUnit Model',
-*/
-
-
 $Vessel = htmlspecialchars($_GET['Vessel']);
 $CruiseID = htmlspecialchars($_GET['CruiseID']);
 $Project_Leg = htmlspecialchars($_GET['Project_Leg']);
@@ -98,7 +49,7 @@ $WaterMassCode = htmlspecialchars($_GET['WaterMassCode']);
 $InstrumentType = htmlspecialchars($_GET['InstrumentType']);
 
 //Connect to DB
-$con = dbConnection('../../db_config_cruisecastlogs.php');
+$con = dbConnection('../db_configs/db_config_cruisecastlogs.php');
 
 
 //SQL input

@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cruise Cast Logs for CTDs</title>
 <!-- Bootstrap theme -->
-<link rel="stylesheet" type="text/css" id="node_modules/bootstrap.css" href="../node_modules/bootstrap/dist/css/bootstrap.css.spacelab.V3.css" />
-<link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/bootstrap_datatables/bootstrap_datatables.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" id="bootstrap_datatables.css" href="../scripts/bootstrap_datatables/bootstrap_datatables.css" />
 <link rel="stylesheet" type="text/css" id="custom.css" href="../scripts/css/custom.css" />
 
 <!-- when using the dataTables javascript plugin, jquery and dataTables must be at top of page -->
@@ -57,7 +57,6 @@ for how entries should be typed in.<p>
     <li><a href="#AB" data-toggle="tab">Cruise Cast Logs (Non Popup)</a></li>
     <li><a href="#AC" data-toggle="tab">Add Cruise Information</a></li>
   </ul>
-  <div class="tabbable">
     <div class="tab-content">
       <div class="tab-pane active" id="AA">
         <p><?php modal_body('Add Cast Records','CruiseCastLogs','AddNewCruiseCTD.php'); ?></p>
@@ -71,7 +70,6 @@ for how entries should be typed in.<p>
       </div>
 
     </div>
-  </div> <!-- /tabbable -->
 
 
 <!-- end content
@@ -92,8 +90,7 @@ for how entries should be typed in.<p>
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="../scripts/jquery.backstretch.js"></script>
 <script>
     $.backstretch(["../ecofoci_images/backgrounds/peggy_buoy.jpg"]);

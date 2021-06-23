@@ -658,7 +658,7 @@ function modal_body_options($modal_label,$table,$script) {
 
 echo '<a href="#" data-toggle="modal" data-target="#'.$table.'" id=myModalSelect>'.$modal_label.'</a>'.PHP_EOL;
 
-echo '<div class="modal fade" id="'.$table.'" tabindex="-1" role="dialog" aria-labelledby="'.$table.'" aria-hidden="true">
+echo '<div class="modal" id="'.$table.'" tabindex="-1" role="dialog" aria-labelledby="'.$table.'" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -685,7 +685,7 @@ function modal_body($modal_label,$table,$script) {
 
 echo '<a href="#" data-toggle="modal" data-target="#'.$table.'" id=myModalSelect>'.$modal_label.'</a>'.PHP_EOL;
 
-echo '<div class="modal fade" id="'.$table.'" tabindex="-1" role="dialog" aria-labelledby="'.$table.'" aria-hidden="true">
+echo '<div class="modal" id="'.$table.'" tabindex="-1" role="dialog" aria-labelledby="'.$table.'" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
